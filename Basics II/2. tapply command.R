@@ -36,3 +36,9 @@ tapply(Age, Smoke, quantile, probs=c(0.2, .80))
 #We can subset based on multiple variable/vectors
 #Calculate the mean Age for smoker/nonsmoker and male/female
 tapply(X=Age, INDEX=list(Smoke, Gender), FUN=mean, na.rm=T)
+
+#A less efficient way to get this done:
+mean(Age[Smoke=='no' & Gender=='female'])
+mean(Age[Smoke=='no' & Gender=='male'])
+mean(Age[Smoke=='yes' & Gender=='female'])
+mean(Age[Smoke=='yes' & Gender=='male'])
