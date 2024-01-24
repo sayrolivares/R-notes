@@ -1,0 +1,21 @@
+---
+title: "Exploratory data analysis report"
+author: "Sayr Olivares"
+date: "2024-01-24"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Health_stats
+Verifying some of the stats we have received the distribution of people's health stats according to the present data.
+The gap between mean and median in Glucose levels, blood pressure, Skin thickness, BMI, DPF and age is not significant, there isn't any valuable insight we can extract from these as they seem to be generally equivalent.
+However, there is long gap in mean and median distribution for insulin levels and outcome which can tell us some considerable factors to analyze.
+
+## Visualizing health indicators
+
+![Alt text](C:/Users/tkylebjorn/Documents/Glucose level by presence of diabetes.jpeg)
+In this graph, we look at the presence of diabetes and its relationship with glucose levels. We see a correlation in how outlier are presented if no presence of diabetes compared to those who keep a strong average below 150 with no extreme value. This might represent a sense of how individuals take care of their health when they are healthy on average since we still don't know if those values are marked like that due to the presence of high sugar consumption the day of the test or any other unknown condition or event.
+
