@@ -1,4 +1,3 @@
-#How to export data from R
 #There are several ways to do so, but my preferred one is the following:
 
 write.table(DataToExport, file="File_name.csv", sep=",")
