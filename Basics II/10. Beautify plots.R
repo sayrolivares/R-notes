@@ -85,3 +85,4 @@ axis(side=1, at=c(7,12.3,15), labels=c("Sev", "mean", "15"))
 axis(side=2, at=c(55,65,75), labels=c(55,65,75)) #Side 2 = y axis
 box()
 #We can also use side 3 to put it on top of the box and 4 to put it to the right
+#We can always play around these characteristics anytime to functions that creates a plot
