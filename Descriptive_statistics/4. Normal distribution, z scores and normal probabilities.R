@@ -24,3 +24,19 @@ pnorm(q=1, mean=0, sd=1, lower.tail=F)
 #for a normal random variable
 ##Find Q1
 qnorm(p=0.25, mean=75, sd= 5, lower.tail=T)
+
+x = seq(from=55, to=95, by=0.2)
+x
+
+dens <- dnorm(x, mean=75, sd=5)
+plot(x, dens, type="l",
+     main="X-Normal: Mean=75, sd=5",
+     xlab="x",
+     ylab="Probability density",
+     las=1)
+abline(v=75)
+
+#Draw a random sample from a randomly distributed population
+rand = rnorm(n=40, mean=75, sd=5)
+rand
+hist(rand)
